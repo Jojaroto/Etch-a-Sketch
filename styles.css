@@ -1,10 +1,10 @@
 .cell{
-    border: 1px solid gray;
-    min-width: 10px;
-    min-height: 20px;
-    display: inline-block;
+  border: 1px solid gray;
+  min-width: 10px;
+  min-height: 20px;
+  display: inline-block;
 }
 
 body {
-    background-color: rgb(39, 40, 43);
+  background-color: rgb(143, 165, 231);
 }
