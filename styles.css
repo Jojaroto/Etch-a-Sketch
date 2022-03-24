@@ -1,10 +1,62 @@
-.cell{
-  border: 1px solid gray;
-  min-width: 10px;
-  min-height: 20px;
-  display: inline-block;
+body{
+  background-color: rgb(84, 208, 230);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  margin:auto;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 50px;
+  
 }
 
-body {
-  background-color: rgb(143, 165, 231);
+#container {
+  display: grid;
+  justify-content: center;
+  margin:auto;
+  grid-template-columns: repeat(var(--numCols), 1fr);
+  grid-template-rows: repeat(var(--numRows), 1fr);
+  width: 550px;
+  height: 550px;
+  border: black solid 1px;
+}
+
+
+#outerBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  border: black solid 1px;
+  height: 650px;
+  width: 650px;
+  background-color: rgb(235, 121, 121);
+  
+}
+.cell {
+  display:flex;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: rgb(212, 211, 211);
+}
+
+#button-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.resetBtn {
+  background-color: rgb(133, 133, 190);
+  height: 40px;
+  width: 100px;
+  margin:20px;
+  font-size: 25px;
+  border-radius: 10px;
+
+}
+
+:root {
+  --numCols: 1;
+  --numRows: 1;
 }
